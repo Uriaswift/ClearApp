@@ -1,6 +1,7 @@
 Ext.define('ClearApp.app.store.GridStore', {
     extend: 'Ext.data.Store',
-    alias: 'gridStore',
+    alias: 'store.testDataGridStore',
+    storeId: 'testDataGridStore',
     autoLoad: {start: 0, limit: 5},
     pageSize: 5,
     remoteSort: true,

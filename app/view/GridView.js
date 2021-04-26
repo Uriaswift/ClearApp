@@ -1,16 +1,12 @@
 Ext.define('ClearApp.app.view.GridView', {
     extend: 'Ext.grid.Panel',
-    xtype: 'gridview',
+    xtype: 'widget.grid-view',
     requires: [
         'ClearApp.app.store.GridStore'
     ],
 
     title: 'Users',
 
-    store: {
-        type: 'gridStore'
-    },
-    
     columns: [
         { text: 'Id', dataIndex: 'id', filter: 'number' },
         { text: 'Name', dataIndex: 'Name', flex: 1 },
@@ -33,5 +29,15 @@ Ext.define('ClearApp.app.view.GridView', {
     filter: {type: 'string', dataIndex: 'Name'},
     listeners: {
         select: 'onItemSelected'
-    }
+    },
+
+    bbar: [{
+        xtype: 'pagingtoolbar',
+        //bind: {
+        //    store: '{StudentListPagingStore}'
+        //},
+        displayInfo: true,
+        displayMsg: 'Displaying {0} to {1} of {2} &nbsp;records ',
+        emptyMsg: "No records to display&nbsp;"
+    }]
 });

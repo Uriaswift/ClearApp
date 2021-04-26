@@ -1,41 +1,18 @@
 Ext.define('ClearApp.app.view.Main', {
-    extend: 'Ext.grid.Panel',
+    extend: 'Ext.container.Container',
     xtype: 'UserListPaging',
+    requires: [
+        'ClearApp.app.model.GridModel',
+    ],
 
-    title: 'Users',
-
+    //controller: 'grid-controller',
     viewModel: {
-        type: 'gridviewmodel'
-    },
-    selType: 'rowmodel',
-    selModel: {
-        mode: 'SINGLE'
-    },
-    viewConfig: {
-        stripeRows: true
-    },
-    listeners: {
-        selectionchange: 'onSelectionChange'
-    },
-    bind: {
-        store: 'gridStore'
+        type: 'grid-viewmodel'
     },
     items: [{
-        title: 'Users',
-        scrollable: true,
-        items: [{
-            xtype: 'gridview'
-        }],
-    }],
-
-    bbar: [{
-        xtype: 'pagingtoolbar',
+        xtype: 'grid-view',
         bind: {
-            store: '{StudentListPagingStore}'
-        },
-        displayInfo: true,
-        displayMsg: 'Displaying {0} to {1} of {2} &nbsp;records ',
-        emptyMsg: "No records to display&nbsp;"
+            store: '{gridStore}'
+        }
     }]
-
 });
