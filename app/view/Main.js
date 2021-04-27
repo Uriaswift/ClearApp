@@ -8,7 +8,7 @@ Ext.define('ClearApp.app.view.Main', {
         'ClearApp.app.store.GridStore'
     ],
 
-    //controller: 'grid-controller',
+    controller: 'grid-controller',
     viewModel: {
         type: 'grid-viewmodel'
     },

@@ -1,6 +1,6 @@
 Ext.define('ClearApp.app.controller.GridController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.main',
+    alias: 'controller.grid-controller',
 
     onItemSelected: function (sender, record) {
         Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
