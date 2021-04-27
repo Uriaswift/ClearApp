@@ -2,7 +2,8 @@ Ext.define('ClearApp.app.store.GridStore', {
     extend: 'Ext.data.Store',
     alias: 'store.testDataGridStore',
     storeId: 'testDataGridStore',
-    autoLoad: true,
+    autoLoad: {start: 0, limit: 5},
+    pageSize: 5,
     remoteSort: true,
     requires: [
         'ClearApp.app.model.GridModel',
@@ -19,4 +20,3 @@ Ext.define('ClearApp.app.store.GridStore', {
         }
     }
 });
-

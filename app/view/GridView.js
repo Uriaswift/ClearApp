@@ -6,6 +6,7 @@ Ext.define('ClearApp.app.view.GridView', {
         'ClearApp.app.controller.GridController'
     ],
     autoScroll: true,
+    pageSize: 5,
     title: 'Users',
     columns: [
         {
@@ -45,12 +46,6 @@ Ext.define('ClearApp.app.view.GridView', {
                 return '<img src="' + v.toString() + '"/>';
             },
             flex: 1
-        },
-        {
-            text: 'TruePhone', dataIndex: 'Phone', renderer: function (v) {
-                return 'stringReplacing';
-            },
-            flex: 1
         }
     ],
     plugins: [{
@@ -62,9 +57,9 @@ Ext.define('ClearApp.app.view.GridView', {
     },
     bbar: [{
         xtype: 'pagingtoolbar',
-        /*bind:{
-            store: 'ClearApp.app.store.GridStore'
-        },*/
+        bind:{
+            store: '{gridStore}'
+        },
         displayInfo: true,
         displayMsg: 'Displaying {0} to {1} of {2} &nbsp;records ',
         emptyMsg: "No records to display&nbsp;"
