@@ -1,8 +1,11 @@
 Ext.define('ClearApp.app.view.Main', {
     extend: 'Ext.container.Container',
     xtype: 'UserListPaging',
+    scrollable: true,
+    pageSize: 5,
     requires: [
         'ClearApp.app.model.GridModel',
+        'ClearApp.app.store.GridStore'
     ],
 
     //controller: 'grid-controller',
@@ -11,6 +14,7 @@ Ext.define('ClearApp.app.view.Main', {
     },
     items: [{
         xtype: 'grid-view',
+        scrollable: true,
         bind: {
             store: '{gridStore}'
         }
