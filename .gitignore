@@ -1,0 +1,9 @@
+# Игнорировать все файлы в каталоге build/
+build/
+bootstrap.css
+bootstrap.js
+classic.json
+classic.jsonp
+sass/example/bootstrap.js
+sass/example/bootstrap.json
+sass/example/bootstrap.jsonp

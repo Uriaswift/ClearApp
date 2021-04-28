@@ -20,4 +20,3 @@ Ext.define('ClearApp.app.store.GridStore', {
         }
     }
 });
-
