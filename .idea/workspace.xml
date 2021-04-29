@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e1fdd49b-1414-4fd6-ac9b-c246c2fdd900" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/FormView.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/FormView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classic.json" beforeDir="false" afterPath="$PROJECT_DIR$/classic.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classic.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/classic.jsonp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.json" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +48,23 @@
       <workItem from="1619524573427" duration="3921000" />
       <workItem from="1619590199119" duration="6130000" />
       <workItem from="1619610795515" duration="3940000" />
-      <workItem from="1619671417410" duration="4729000" />
+      <workItem from="1619671417410" duration="9957000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/view/Main.js</url>
+          <line>99</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -12,7 +12,8 @@ Ext.define('ClearApp.app.view.Main', {
         'ClearApp.app.store.GridStudentsStore',
         'ClearApp.app.model.GridStudentsModel',
         'ClearApp.app.viewmodel.GridViewModel',
-        'ClearApp.app.view.FormView'
+        'ClearApp.app.view.FormView',
+        'ClearApp.app.view.TextAreaForm'
 
     ],
 
@@ -100,7 +101,7 @@ Ext.define('ClearApp.app.view.Main', {
             title: 'Form',
             iconCls: 'x-fa fa-user',
             items: [{
-                xtype: 'form-view',
+                //xtype: 'textareafield',
             }]
         }]
 });
