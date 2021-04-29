@@ -6,6 +6,8 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
     ],
     stores: {
         gridStore: {
+            autoLoad: true,
+            pageSize: 2,
             model: 'ClearApp.app.model.GridModel',
             proxy: {
                 type: 'ajax',
@@ -15,7 +17,24 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
                     rootProperty: 'result'
                 }
             },
-            autoLoad: true
+        },
+        StudentsPagingStore: {
+            autoLoad: true,
+            model: 'ClearApp.app.model.GridStudentsModel',
+            pageSize: 2,
+            proxy:
+                {
+                    type: 'rest',
+                    reader:
+                        {
+                            pageSize: 2,
+                            rootProperty: 'data',
+                            type: 'json',
+                            totalProperty: 'TotalCount'
+                        },
+                    url: 'http://localhost:8081/api/info'
+                }
         }
+
     }
 });

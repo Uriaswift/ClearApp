@@ -19,5 +19,14 @@ Ext.define('ClearApp.app.controller.GridController', {
         const rep4 = rep3.replace("(", "");
         return '<p> ' + rep4 + ' </p>';
     },
-
+    renderrerFunction: function (value) {
+        const str = value.toString();
+        return str;
+    },
+    mailTofunction: function (value) {
+        return '<a href="mailto:' + value.toString() + '">' + value.toString() + '</a>';
+    },
+    rendererImage: function (value) {
+        return '<img src="' + value.toString() + '"/>';
+    }
 });

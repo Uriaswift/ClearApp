@@ -6,7 +6,7 @@ Ext.define('ClearApp.app.view.GridView', {
         'ClearApp.app.controller.GridController'
     ],
     autoScroll: true,
-    pageSize: 5,
+    pageSize: 2,
     title: 'Users',
     columns: [
         {
@@ -18,19 +18,13 @@ Ext.define('ClearApp.app.view.GridView', {
         {
             text: 'Email',
             dataIndex: 'Email',
-            renderer: function (v) {
-                return '<a href="mailto:' + v.toString() + '">' + v.toString() + '</a>';
-            },
+            renderer: 'mailTofunction',
             flex: 1
         },
         {
             text: 'Phone',
             dataIndex: 'Phone',
-            renderer: function (v) {
-                const str = v.toString();
-                //return '<p> ('+ str.slice(0, 5)+') '+ str.slice(6, 14) + ' </p>';
-                return str;
-            },
+            renderer: 'renderrerFunction',
             flex: 1
         },
         {
@@ -42,9 +36,7 @@ Ext.define('ClearApp.app.view.GridView', {
         {
             text: 'Avatar',
             dataIndex: 'Avatar',
-            renderer: function (v) {
-                return '<img src="' + v.toString() + '"/>';
-            },
+            renderer: 'rendererImage',
             flex: 1
         }
     ],
