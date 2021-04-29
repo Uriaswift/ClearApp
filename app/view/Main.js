@@ -12,7 +12,7 @@ Ext.define('ClearApp.app.view.Main', {
         'ClearApp.app.store.GridStudentsStore',
         'ClearApp.app.model.GridStudentsModel',
         'ClearApp.app.viewmodel.GridViewModel',
-        'ClearApp.app.view.FormView'
+        //'ClearApp.app.view.FormView'
 
     ],
 
@@ -90,17 +90,20 @@ Ext.define('ClearApp.app.view.Main', {
             iconCls: 'x-fa fa-user',
             layout: 'fit',
             items: [{
-            xtype: 'gridStudentsView',
-            scrollable: true,
-            bind: {
-                store: '{StudentsPagingStore}'
-            },
+                xtype: 'gridStudentsView',
+                scrollable: true,
+                bind: {
+                    store: '{StudentsPagingStore}'
+                },
             }]
         }, {
             title: 'Form',
             iconCls: 'x-fa fa-user',
             items: [{
-                xtype: 'form',
+                xtype: 'fieldcontainer',
+                items: [{
+                    xtype: 'textfield',
+                }]
             }]
         }]
 });
