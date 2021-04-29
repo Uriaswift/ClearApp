@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e1fdd49b-1414-4fd6-ac9b-c246c2fdd900" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controller/GridController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/GridController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/GridStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/GridStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/GridView.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/GridView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classic.json" beforeDir="false" afterPath="$PROJECT_DIR$/classic.json" afterDir="false" />
@@ -57,6 +53,7 @@
       <workItem from="1619524573427" duration="3921000" />
       <workItem from="1619590199119" duration="6130000" />
       <workItem from="1619610795515" duration="3940000" />
+      <workItem from="1619671417410" duration="4729000" />
     </task>
     <servers />
   </component>

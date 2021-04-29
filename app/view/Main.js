@@ -12,6 +12,7 @@ Ext.define('ClearApp.app.view.Main', {
         'ClearApp.app.store.GridStudentsStore',
         'ClearApp.app.model.GridStudentsModel',
         'ClearApp.app.viewmodel.GridViewModel',
+        'ClearApp.app.view.FormView'
 
     ],
 
@@ -93,7 +94,13 @@ Ext.define('ClearApp.app.view.Main', {
             scrollable: true,
             bind: {
                 store: '{StudentsPagingStore}'
-            }
+            },
             }]
-    }]
+        }, {
+            title: 'Form',
+            iconCls: 'x-fa fa-user',
+            items: [{
+                xtype: 'form-view',
+            }]
+        }]
 });
