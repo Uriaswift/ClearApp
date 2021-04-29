@@ -100,7 +100,7 @@ Ext.define('ClearApp.app.view.Main', {
             title: 'Form',
             iconCls: 'x-fa fa-user',
             items: [{
-                xtype: 'form-view',
+                xtype: 'form',
             }]
         }]
 });

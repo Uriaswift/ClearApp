@@ -1,6 +1,6 @@
 Ext.create('ClearApp.app.view.FormView', {
     extend: 'Ext.form.Panel',
-    xtype: 'form-view',
+    xtype: 'form',
     title: 'Simple Form',
     bodyPadding: 5,
     width: 350,
