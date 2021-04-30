@@ -3,6 +3,7 @@ $image-search-path: 'C:/Users/a.kobelev/Desktop/ClearApp/build/development/Clear
 $theme-name:  dynamic( 'theme-triton' );
 $include-clearapp-application: dynamic(true);;
 $include-clearapp-app-controller-gridcontroller: dynamic(true);;
+$include-clearapp-app-model-combomodel: dynamic(true);;
 $include-clearapp-app-model-gridmodel: dynamic(true);;
 $include-clearapp-app-model-gridstudentsmodel: dynamic(true);;
 $include-clearapp-app-store-gridstore: dynamic(true);;

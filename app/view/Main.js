@@ -11,9 +11,7 @@ Ext.define('ClearApp.app.view.Main', {
         'ClearApp.app.view.GridStudentsView',
         'ClearApp.app.store.GridStudentsStore',
         'ClearApp.app.model.GridStudentsModel',
-        'ClearApp.app.viewmodel.GridViewModel',
-        'ClearApp.app.view.FormView',
-        'ClearApp.app.view.TextAreaForm'
+        'ClearApp.app.viewmodel.GridViewModel'
 
     ],
 
@@ -101,7 +99,67 @@ Ext.define('ClearApp.app.view.Main', {
             title: 'Form',
             iconCls: 'x-fa fa-user',
             items: [{
-                //xtype: 'textareafield',
+                xtype:'fieldset',
+                title: 'Show Panel', // title or checkboxToggle creates fieldset header
+                columnWidth: 0.5,
+                checkboxToggle: true,
+                collapsed: true, // fieldset initially collapsed
+                layout:'anchor',
+                items :[{
+                    xtype: 'combobox',
+                    fieldLabel: 'Users',
+                    labelWidth: 150,
+                    displayField: 'name',
+                    //valueField: 'code',
+                    bind: {
+                        store: '{ComboStore}',
+                    }
+                }, {
+                    xtype:'fieldset',
+                    columnWidth: 0.5,
+                    title: 'Fieldset 1',
+                    collapsible: true,
+                    defaultType: 'textfield',
+                    defaults: {anchor: '100%'},
+                    layout: 'anchor',
+                    items :[{
+                        fieldLabel: 'Field 1',
+                        name: 'field1'
+                    }, {
+                        fieldLabel: 'Field 2',
+                        name: 'field2'
+                    }]
+                }, {
+                    items: [{
+                        xtype: 'datefield',
+                        anchor: '100%',
+                        fieldLabel: 'From',
+                        name: 'from_date',
+                        maxValue: new Date()  // limited to the current date or prior
+                    }, {
+                        xtype: 'datefield',
+                        anchor: '100%',
+                        fieldLabel: 'To',
+                        name: 'to_date',
+                        value: new Date()  // defaults to today
+                    }]
+                }, {
+                    title      : 'Sample TextArea',
+                    width      : 400,
+                    bodyPadding: 10,
+                    xtype     : 'textareafield',
+                    grow      : true,
+                    name      : 'message',
+                    fieldLabel: 'Message',
+                    anchor    : '100%'
+                }, {
+                    items: [
+                        {
+                            xtype: 'button',
+                            text : 'My Button'
+                        }
+                    ]
+                }]
             }]
         }]
 });

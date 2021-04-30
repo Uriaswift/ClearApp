@@ -34,6 +34,23 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
                         },
                     url: 'http://localhost:8081/api/info'
                 }
+        },
+        ComboStore: {
+            autoLoad: true,
+            model: 'ClearApp.app.model.ComboModel',
+            pageSize: 2,
+            proxy:
+                {
+                    type: 'rest',
+                    reader:
+                        {
+                            pageSize: 2,
+                            rootProperty: 'data',
+                            type: 'json',
+                            totalProperty: 'TotalCount'
+                        },
+                    url: 'http://localhost:8081/api/info'
+                }
         }
 
     }

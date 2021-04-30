@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1fdd49b-1414-4fd6-ac9b-c246c2fdd900" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/model/ComboModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/FormView.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/FormView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/development/ClearApp/classic/resources/ClearApp-all.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/development/ClearApp/classic/resources/ClearApp-all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/development/ClearApp/classic/resources/ClearApp-all_1.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/development/ClearApp/classic/resources/ClearApp-all_1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/development/ClearApp/classic/resources/ClearApp-all_2.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/development/ClearApp/classic/resources/ClearApp-all_2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic.json" beforeDir="false" afterPath="$PROJECT_DIR$/classic.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/classic.jsonp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.json" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +45,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NodeServer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/model" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\a.kobelev\Desktop\ClearApp\app\model" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -49,6 +67,8 @@
       <workItem from="1619590199119" duration="6130000" />
       <workItem from="1619610795515" duration="3940000" />
       <workItem from="1619671417410" duration="9957000" />
+      <workItem from="1619701969868" duration="526000" />
+      <workItem from="1619758462032" duration="10675000" />
     </task>
     <servers />
   </component>
@@ -60,8 +80,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/view/Main.js</url>
-          <line>99</line>
-          <properties lambdaOrdinal="-1" />
+          <line>93</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
