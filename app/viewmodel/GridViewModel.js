@@ -4,6 +4,9 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
     requires: [
         'ClearApp.app.model.GridModel',
     ],
+    data: {
+      test: 1
+    },
     stores: {
         gridStore: {
             autoLoad: true,

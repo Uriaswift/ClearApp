@@ -110,56 +110,45 @@ Ext.define('ClearApp.app.view.Main', {
                     fieldLabel: 'Users',
                     labelWidth: 150,
                     displayField: 'name',
-                    //valueField: 'code',
+                    valueField: 'id',
                     bind: {
                         store: '{ComboStore}',
+                        value: '{test}'
                     }
                 }, {
                     xtype:'fieldset',
                     columnWidth: 0.5,
                     title: 'Fieldset 1',
-                    collapsible: true,
+                    //collapsible: true,
                     defaultType: 'textfield',
                     defaults: {anchor: '100%'},
                     layout: 'anchor',
                     items :[{
                         fieldLabel: 'Field 1',
-                        name: 'field1'
+                        name: 'field1',
+                        valueField: 'id',
+                        bind: {
+                            value: '{test}'
+                        }
                     }, {
                         fieldLabel: 'Field 2',
-                        name: 'field2'
-                    }]
-                }, {
-                    items: [{
-                        xtype: 'datefield',
-                        anchor: '100%',
-                        fieldLabel: 'From',
-                        name: 'from_date',
-                        maxValue: new Date()  // limited to the current date or prior
-                    }, {
-                        xtype: 'datefield',
-                        anchor: '100%',
-                        fieldLabel: 'To',
-                        name: 'to_date',
-                        value: new Date()  // defaults to today
-                    }]
-                }, {
-                    title      : 'Sample TextArea',
-                    width      : 400,
-                    bodyPadding: 10,
-                    xtype     : 'textareafield',
-                    grow      : true,
-                    name      : 'message',
-                    fieldLabel: 'Message',
-                    anchor    : '100%'
-                }, {
-                    items: [
-                        {
-                            xtype: 'button',
-                            text : 'My Button'
+                        valueField: 'name',
+                        name: 'field2',
+                        bind: {
+
                         }
-                    ]
+                    },
+
+                    ],
+                }, {
+                    buttons: [{
+                        text: 'Reset',
+                    }, {
+                        text: 'Save',
+
+                    }],
                 }]
+
             }]
         }]
 });

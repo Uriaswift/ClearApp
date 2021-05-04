@@ -28,5 +28,6 @@ Ext.define('ClearApp.app.controller.GridController', {
     },
     rendererImage: function (value) {
         return '<img src="' + value.toString() + '"/>';
-    }
+    },
+
 });

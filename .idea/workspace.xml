@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1fdd49b-1414-4fd6-ac9b-c246c2fdd900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/model/ComboModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/GridController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/GridController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/development/ClearApp/classic/resources/ClearApp-all.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/development/ClearApp/classic/resources/ClearApp-all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/development/ClearApp/classic/resources/ClearApp-all_1.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/development/ClearApp/classic/resources/ClearApp-all_1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/development/ClearApp/classic/resources/ClearApp-all_2.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/development/ClearApp/classic/resources/ClearApp-all_2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classic.json" beforeDir="false" afterPath="$PROJECT_DIR$/classic.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classic.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/classic.jsonp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.json" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" afterDir="false" />
     </list>
@@ -45,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -68,22 +60,12 @@
       <workItem from="1619610795515" duration="3940000" />
       <workItem from="1619671417410" duration="9957000" />
       <workItem from="1619701969868" duration="526000" />
-      <workItem from="1619758462032" duration="10675000" />
+      <workItem from="1619758462032" duration="13185000" />
+      <workItem from="1620104745200" duration="13057000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/view/Main.js</url>
-          <line>93</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
