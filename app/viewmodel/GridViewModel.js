@@ -5,7 +5,8 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
         'ClearApp.app.model.GridModel',
     ],
     data: {
-      test: 1
+        test: 1,
+        test2: 123
     },
     stores: {
         gridStore: {

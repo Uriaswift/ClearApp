@@ -103,7 +103,7 @@ Ext.define('ClearApp.app.view.Main', {
                 title: 'Show Panel', // title or checkboxToggle creates fieldset header
                 columnWidth: 0.5,
                 checkboxToggle: true,
-                collapsed: true, // fieldset initially collapsed
+                collapsed: false, // fieldset initially collapsed
                 layout:'anchor',
                 items :[{
                     xtype: 'combobox',
@@ -135,7 +135,7 @@ Ext.define('ClearApp.app.view.Main', {
                         valueField: 'name',
                         name: 'field2',
                         bind: {
-
+                            value: '{test2}'
                         }
                     },
 
@@ -143,12 +143,12 @@ Ext.define('ClearApp.app.view.Main', {
                 }, {
                     buttons: [{
                         text: 'Reset',
+                        handler: "onReset"
                     }, {
                         text: 'Save',
-
+                        handler: "onSave"
                     }],
                 }]
-
             }]
         }]
 });

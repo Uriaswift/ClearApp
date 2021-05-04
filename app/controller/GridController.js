@@ -30,4 +30,20 @@ Ext.define('ClearApp.app.controller.GridController', {
         return '<img src="' + value.toString() + '"/>';
     },
 
+    onReset: function () {
+        var vm = this.getViewModel();
+        Ext.Msg.confirm('Подтверждение', 'Обновить данные?', function (btn) {
+            if (btn === 'yes') {
+                vm.get('gridStore').load();
+            }
+        });
+    },
+
+    onSave: function () {
+        var vm = this.getViewModel();
+
+        vm.get('gridStore').getData().items[0].set("Name", "Nevsa Zannolli+");
+
+        vm.get('gridStore').save();
+    }
 });
