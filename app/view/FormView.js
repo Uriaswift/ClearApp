@@ -3,9 +3,6 @@ Ext.create('Ext.form.FormPanel', {
     bodyPadding: 5,
     width: 350,
 
-    // The form will submit an AJAX request to this URL when submitted
-    url: 'http://localhost:8081/api/info',
-
     // Fields will be arranged vertically, stretched to full width
     layout: 'anchor',
     defaults: {
