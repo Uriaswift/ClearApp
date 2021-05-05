@@ -34,16 +34,30 @@ Ext.define('ClearApp.app.controller.GridController', {
         var vm = this.getViewModel();
         Ext.Msg.confirm('Подтверждение', 'Обновить данные?', function (btn) {
             if (btn === 'yes') {
-                vm.get('gridStore').load();
+                vm.getStore('ComboStore').load();
             }
         });
     },
 
     onSave: function () {
         var vm = this.getViewModel();
+        vm.get('RestStore').getData().items[0].set('name', "newName");
 
-        vm.get('gridStore').getData().items[0].set("Name", "Nevsa Zannolli+");
+        vm.get('RestStore').save();
+    },
+    onSave2: function () {
+        var vm = this.getViewModel();
 
-        vm.get('gridStore').save();
+        var store = vm.get('RestStore');
+        var record = Ext.create('ClearApp.app.model.ComboModel', {
+            id: 34, name: 'Eugene'
+        });
+        store.add(record);
+
+        // 'ClearApp.app.model.ComboModel'
+        //vm.get('RestStore').getData().add({id: 11, name: "drugoe"});
+        //vm.get('RestStore').getData().items[0].set('name', "newName");
+
+        store.save();
     }
 });

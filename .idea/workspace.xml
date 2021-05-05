@@ -4,6 +4,7 @@
     <list default="true" id="e1fdd49b-1414-4fd6-ac9b-c246c2fdd900" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controller/GridController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/GridController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/model/GridModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/GridModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classic.json" beforeDir="false" afterPath="$PROJECT_DIR$/classic.json" afterDir="false" />
@@ -61,7 +62,9 @@
       <workItem from="1619671417410" duration="9957000" />
       <workItem from="1619701969868" duration="526000" />
       <workItem from="1619758462032" duration="13185000" />
-      <workItem from="1620104745200" duration="13057000" />
+      <workItem from="1620104745200" duration="14296000" />
+      <workItem from="1620128518660" duration="4854000" />
+      <workItem from="1620195591840" duration="16354000" />
     </task>
     <servers />
   </component>

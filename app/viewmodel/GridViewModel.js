@@ -6,7 +6,6 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
     ],
     data: {
         test: 1,
-        test2: 123
     },
     stores: {
         gridStore: {
@@ -42,7 +41,6 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
         ComboStore: {
             autoLoad: true,
             model: 'ClearApp.app.model.ComboModel',
-            pageSize: 2,
             proxy:
                 {
                     type: 'rest',
@@ -53,9 +51,39 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
                             type: 'json',
                             totalProperty: 'TotalCount'
                         },
-                    url: 'http://localhost:8081/api/info'
+                    url: 'http://localhost:8081/api/info/'
+                }
+        }, RestStore: {
+            autoLoad: true,
+            model: 'ClearApp.app.model.ComboModel',
+            proxy:
+                {
+                    type: 'rest',
+                    reader:
+                        {
+                            rootProperty: 'data',
+                            type: 'json',
+                            totalProperty: 'TotalCount'
+                        },
+                    url: 'http://localhost:8081/api/info/'
                 }
         }
 
+    },
+    formulas: {
+        test2: {
+            bind: {
+                test: '{test}',
+                comboStore: '{ComboStore}'
+            },
+            get: function (data) {
+                if (data.test && data.comboStore) {
+                    var rec = data.comboStore.getById(data.test);
+                    if (!Ext.isEmpty(rec)){
+                       return rec.get('name')
+                    }
+                }
+            }
+        }
     }
 });

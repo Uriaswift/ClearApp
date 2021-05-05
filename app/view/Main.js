@@ -99,13 +99,6 @@ Ext.define('ClearApp.app.view.Main', {
             title: 'Form',
             iconCls: 'x-fa fa-user',
             items: [{
-                xtype:'fieldset',
-                title: 'Show Panel', // title or checkboxToggle creates fieldset header
-                columnWidth: 0.5,
-                checkboxToggle: true,
-                collapsed: false, // fieldset initially collapsed
-                layout:'anchor',
-                items :[{
                     xtype: 'combobox',
                     fieldLabel: 'Users',
                     labelWidth: 150,
@@ -115,6 +108,66 @@ Ext.define('ClearApp.app.view.Main', {
                         store: '{ComboStore}',
                         value: '{test}'
                     }
+                },{
+                    xtype: 'menu',
+                    width: 100,
+                    height: 100,
+                    plain: true,
+                    floating: false,  // usually you want this set to True (default)
+                    renderTo: Ext.getBody(),  // usually rendered by it's containing component
+                    items: [{
+                    text: 'plain item 1'
+                },{
+                    text: 'plain item 2'
+                },{
+                    text: 'plain item 3'
+                }]
+                }, {
+                xtype: 'toolbar',
+                width   : 500,
+                items: [
+                    {
+                        // xtype: 'button', // default for Toolbars
+                        text: 'Button'
+                    },
+                    {
+                        xtype: 'splitbutton',
+                        text : 'Split Button'
+                    },
+                    // begin using the right-justified button container
+                    '->', // same as { xtype: 'tbfill' }
+                    {
+                        xtype    : 'textfield',
+                        name     : 'field1',
+                        emptyText: 'enter search term'
+                    },
+                    // add a vertical separator bar between toolbar items
+                    '-', // same as {xtype: 'tbseparator'} to create Ext.toolbar.Separator
+                    'text 1', // same as {xtype: 'tbtext', text: 'text1'} to create Ext.toolbar.TextItem
+                    { xtype: 'tbspacer' },// same as ' ' to create Ext.toolbar.Spacer
+                    'text 2',
+                    { xtype: 'tbspacer', width: 50 }, // add a 50px space
+                    'text 3'
+                ]
+                }, {
+                xtype: 'fieldcontainer',
+                fieldLabel: 'Last Three Jobs',
+                labelWidth: 100,
+                layout: 'hbox',
+                items: [{
+                    xtype: 'textfield',
+                    flex: 1
+                }, {
+                    xtype: 'splitter'
+                }, {
+                    xtype: 'textfield',
+                    flex: 1
+                }, {
+                    xtype: 'splitter'
+                }, {
+                    xtype: 'textfield',
+                    flex: 1
+                }]
                 }, {
                     xtype:'fieldset',
                     columnWidth: 0.5,
@@ -127,16 +180,16 @@ Ext.define('ClearApp.app.view.Main', {
                         fieldLabel: 'Field 1',
                         name: 'field1',
                         valueField: 'id',
-                        bind: {
-                            value: '{test}'
-                        }
+                        bind: '{test}',
+
                     }, {
                         fieldLabel: 'Field 2',
                         valueField: 'name',
                         name: 'field2',
                         bind: {
                             value: '{test2}'
-                        }
+                        },
+
                     },
 
                     ],
@@ -147,8 +200,13 @@ Ext.define('ClearApp.app.view.Main', {
                     }, {
                         text: 'Save',
                         handler: "onSave"
-                    }],
-                }]
+                    },
+                        {
+                            text: 'Save+',
+                            handler: "onSave2"
+                        }
+                    ],
+
             }]
         }]
 });
