@@ -5,7 +5,7 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
         'ClearApp.app.model.GridModel',
     ],
     data: {
-        test: 1,
+        fieldId: 1,
     },
     stores: {
         gridStore: {
@@ -25,63 +25,74 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
             autoLoad: true,
             model: 'ClearApp.app.model.GridStudentsModel',
             pageSize: 2,
-            proxy:
-                {
-                    type: 'rest',
-                    reader:
-                        {
-                            pageSize: 2,
-                            rootProperty: 'data',
-                            type: 'json',
-                            totalProperty: 'TotalCount'
-                        },
-                    url: 'http://localhost:8081/api/info'
-                }
+            proxy: {
+                type: 'rest',
+                reader: {
+                    pageSize: 2,
+                    rootProperty: 'data',
+                    type: 'json',
+                    totalProperty: 'TotalCount'
+                },
+                url: 'http://localhost/node/api/info'
+            }
         },
-        ComboStore: {
+        comboStore: {
             autoLoad: true,
             model: 'ClearApp.app.model.ComboModel',
-            proxy:
-                {
-                    type: 'rest',
-                    reader:
-                        {
-                            pageSize: 2,
-                            rootProperty: 'data',
-                            type: 'json',
-                            totalProperty: 'TotalCount'
-                        },
-                    url: 'http://localhost:8081/api/info/'
+            proxy: {
+                type: 'ajax',
+                url: '/node/api/comboStore',
+                reader: {
+                    type: 'json',
+                    rootProperty: 'items'
                 }
-        }, RestStore: {
-            autoLoad: true,
-            model: 'ClearApp.app.model.ComboModel',
-            proxy:
-                {
-                    type: 'rest',
-                    reader:
-                        {
-                            rootProperty: 'data',
-                            type: 'json',
-                            totalProperty: 'TotalCount'
-                        },
-                    url: 'http://localhost:8081/api/info/'
-                }
+            }
         }
-
     },
     formulas: {
-        test2: {
+        fieldName: {
             bind: {
-                test: '{test}',
-                comboStore: '{ComboStore}'
+                fieldId: '{fieldId}',
+                comboStore: '{comboStore}'
             },
             get: function (data) {
-                if (data.test && data.comboStore) {
-                    var rec = data.comboStore.getById(data.test);
-                    if (!Ext.isEmpty(rec)){
-                       return rec.get('name')
+                if (data.fieldId && data.comboStore) {
+                    var rec = data.comboStore.getById(data.fieldId);
+                    if (!Ext.isEmpty(rec)) {
+                        return rec.get('name')
                     }
+                }
+            },
+            set: function (name) {
+                if (this.get('fieldId') && this.getStore('comboStore')) {
+                    var rec = this.getStore('comboStore').getById(this.get('fieldId'));
+                    if (!Ext.isEmpty(rec)) {
+                        rec.set('name', name)
+                    }
+                    //console.log(rec.get('name'))
+                }
+            }
+        },
+        fieldDescription: {
+            bind: {
+                fieldId: '{fieldId}',
+                comboStore: '{comboStore}'
+            },
+            get: function (data) {
+                if (data.fieldId && data.comboStore) {
+                    var rec = data.comboStore.getById(data.fieldId);
+                    if (!Ext.isEmpty(rec)) {
+                        return rec.get('description')
+                    }
+                }
+            },
+            set: function (description) {
+                if (this.get('fieldId') && this.getStore('comboStore')) {
+                    var rec = this.getStore('comboStore').getById(this.get('fieldId'));
+                    if (!Ext.isEmpty(rec)) {
+                        rec.set('description', description)
+                    }
+                    //console.log(rec.get('description'))
                 }
             }
         }

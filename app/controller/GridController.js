@@ -11,7 +11,7 @@ Ext.define('ClearApp.app.controller.GridController', {
             //
         }
     },
-    stringReplacing: function(value) {
+    stringReplacing: function (value) {
         let str = value.toString();
         const rep1 = str.replace("-", "");
         const rep2 = rep1.replace(")", "");
@@ -34,30 +34,24 @@ Ext.define('ClearApp.app.controller.GridController', {
         var vm = this.getViewModel();
         Ext.Msg.confirm('Подтверждение', 'Обновить данные?', function (btn) {
             if (btn === 'yes') {
-                vm.getStore('ComboStore').load();
+                vm.getStore('comboStore').load();
             }
         });
     },
 
     onSave: function () {
-        var vm = this.getViewModel();
-        vm.get('RestStore').getData().items[0].set('name', "newName");
-
-        vm.get('RestStore').save();
+        var vm = this.getViewModel(),
+            store = vm.get('comboStore');
+        store.save();
     },
+
     onSave2: function () {
-        var vm = this.getViewModel();
-
-        var store = vm.get('RestStore');
-        var record = Ext.create('ClearApp.app.model.ComboModel', {
-            id: 34, name: 'Eugene'
-        });
+        var vm = this.getViewModel(),
+            store = vm.get('comboStore'),
+            record = Ext.create('ClearApp.app.model.ComboModel');
+        record.set('name', 'newName');
+        record.set('description', 'newDescription');
         store.add(record);
-
-        // 'ClearApp.app.model.ComboModel'
-        //vm.get('RestStore').getData().add({id: 11, name: "drugoe"});
-        //vm.get('RestStore').getData().items[0].set('name', "newName");
-
         store.save();
     }
 });

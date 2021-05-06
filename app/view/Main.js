@@ -78,53 +78,43 @@ Ext.define('ClearApp.app.view.Main', {
             iconCls: 'x-fa fa-user',
             layout: 'fit',
             items: [{
-            xtype: 'grid-view',
-            scrollable: true,
-            bind: {
-                store: '{gridStore}'
-            }
+                xtype: 'grid-view',
+                scrollable: true,
+                bind: {
+                    store: '{gridStore}'
+                }
             }]
-         }, {
+        }, {
             title: 'Students Grid',
             iconCls: 'x-fa fa-user',
             layout: 'fit',
             items: [{
-            xtype: 'gridStudentsView',
-            scrollable: true,
-            bind: {
-                store: '{StudentsPagingStore}'
-            },
+                xtype: 'gridStudentsView',
+                scrollable: true,
+                bind: {
+                    store: '{StudentsPagingStore}'
+                },
             }]
         }, {
             title: 'Form',
             iconCls: 'x-fa fa-user',
             items: [{
-                    xtype: 'combobox',
-                    fieldLabel: 'Users',
-                    labelWidth: 150,
-                    displayField: 'name',
-                    valueField: 'id',
-                    bind: {
-                        store: '{ComboStore}',
-                        value: '{test}'
-                    }
-                },{
-                    xtype: 'menu',
-                    width: 100,
-                    height: 100,
-                    plain: true,
-                    floating: false,  // usually you want this set to True (default)
-                    renderTo: Ext.getBody(),  // usually rendered by it's containing component
-                    items: [{
+                xtype: 'menu',
+                width: 100,
+                height: 100,
+                plain: true,
+                floating: false,  // usually you want this set to True (default)
+                renderTo: Ext.getBody(),  // usually rendered by it's containing component
+                items: [{
                     text: 'plain item 1'
-                },{
+                }, {
                     text: 'plain item 2'
-                },{
+                }, {
                     text: 'plain item 3'
                 }]
-                }, {
+            }, {
                 xtype: 'toolbar',
-                width   : 500,
+                width: 500,
                 items: [
                     {
                         // xtype: 'button', // default for Toolbars
@@ -132,24 +122,24 @@ Ext.define('ClearApp.app.view.Main', {
                     },
                     {
                         xtype: 'splitbutton',
-                        text : 'Split Button'
+                        text: 'Split Button'
                     },
                     // begin using the right-justified button container
                     '->', // same as { xtype: 'tbfill' }
                     {
-                        xtype    : 'textfield',
-                        name     : 'field1',
+                        xtype: 'textfield',
+                        name: 'field1',
                         emptyText: 'enter search term'
                     },
                     // add a vertical separator bar between toolbar items
                     '-', // same as {xtype: 'tbseparator'} to create Ext.toolbar.Separator
                     'text 1', // same as {xtype: 'tbtext', text: 'text1'} to create Ext.toolbar.TextItem
-                    { xtype: 'tbspacer' },// same as ' ' to create Ext.toolbar.Spacer
+                    {xtype: 'tbspacer'},// same as ' ' to create Ext.toolbar.Spacer
                     'text 2',
-                    { xtype: 'tbspacer', width: 50 }, // add a 50px space
+                    {xtype: 'tbspacer', width: 50}, // add a 50px space
                     'text 3'
                 ]
-                }, {
+            }, {
                 xtype: 'fieldcontainer',
                 fieldLabel: 'Last Three Jobs',
                 labelWidth: 100,
@@ -168,44 +158,49 @@ Ext.define('ClearApp.app.view.Main', {
                     xtype: 'textfield',
                     flex: 1
                 }]
+            }, {
+                xtype: 'fieldset',
+                columnWidth: 0.5,
+                title: 'Fieldset 1',
+                //collapsible: true,
+                defaultType: 'textfield',
+                defaults: {anchor: '100%'},
+                layout: 'anchor',
+                items: [{
+                    xtype: 'combobox',
+                    fieldLabel: 'Users',
+                    labelWidth: 150,
+                    editable: false,
+                    displayField: 'name',
+                    valueField: 'id',
+                    bind: {
+                        store: '{comboStore}',
+                        value: '{fieldId}'
+                    }
                 }, {
-                    xtype:'fieldset',
-                    columnWidth: 0.5,
-                    title: 'Fieldset 1',
-                    //collapsible: true,
-                    defaultType: 'textfield',
-                    defaults: {anchor: '100%'},
-                    layout: 'anchor',
-                    items :[{
-                        fieldLabel: 'Field 1',
-                        name: 'field1',
-                        valueField: 'id',
-                        bind: '{test}',
-
-                    }, {
-                        fieldLabel: 'Field 2',
-                        valueField: 'name',
-                        name: 'field2',
-                        bind: {
-                            value: '{test2}'
-                        },
-
-                    },
-
-                    ],
+                    fieldLabel: 'Field Id',
+                    bind: '{fieldId}',
+                    readOnly: true
                 }, {
-                    buttons: [{
-                        text: 'Reset',
-                        handler: "onReset"
-                    }, {
-                        text: 'Save',
-                        handler: "onSave"
-                    },
-                        {
-                            text: 'Save+',
-                            handler: "onSave2"
-                        }
-                    ],
+                    fieldLabel: 'Field Name',
+                    bind: '{fieldName}'
+                }, {
+                    fieldLabel: 'Field Description',
+                    bind: '{fieldDescription}'
+                }],
+            }, {
+                buttons: [{
+                    text: 'Reset',
+                    handler: "onReset"
+                }, {
+                    text: 'Save',
+                    handler: "onSave"
+                },
+                    {
+                        text: 'Save+',
+                        handler: "onSave2"
+                    }
+                ],
 
             }]
         }]
