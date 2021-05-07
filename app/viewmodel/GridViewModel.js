@@ -41,7 +41,20 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
             model: 'ClearApp.app.model.ComboModel',
             proxy: {
                 type: 'ajax',
-                url: '/node/api/comboStore',
+                url: 'http://localhost:8081/node/api/comboStore',
+                reader: {
+                    type: 'json',
+                    rootProperty: 'items'
+                }
+            }
+        }, newStore: {
+            autoLoad: true,
+            pageSize: 5,
+            model: 'ClearApp.app.model.ComboModel',
+            proxy: {
+                type: 'ajax',
+                pageSize: 5,
+                url: 'http://localhost:8081/node/api/newStore',
                 reader: {
                     type: 'json',
                     rootProperty: 'items'
@@ -91,6 +104,29 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
                     var rec = this.getStore('comboStore').getById(this.get('fieldId'));
                     if (!Ext.isEmpty(rec)) {
                         rec.set('description', description)
+                    }
+                    //console.log(rec.get('description'))
+                }
+            }
+        },
+        fieldAnother: {
+            bind: {
+                fieldId: '{fieldId}',
+                comboStore: '{comboStore}'
+            },
+            get: function (data) {
+                if (data.fieldId && data.comboStore) {
+                    var rec = data.comboStore.getById(data.fieldId);
+                    if (!Ext.isEmpty(rec)) {
+                        return rec.get('another')
+                    }
+                }
+            },
+            set: function (another) {
+                if (this.get('fieldId') && this.getStore('comboStore')) {
+                    var rec = this.getStore('comboStore').getById(this.get('fieldId'));
+                    if (!Ext.isEmpty(rec)) {
+                        rec.set('another', another)
                     }
                     //console.log(rec.get('description'))
                 }

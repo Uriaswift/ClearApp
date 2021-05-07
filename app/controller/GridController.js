@@ -19,6 +19,15 @@ Ext.define('ClearApp.app.controller.GridController', {
         const rep4 = rep3.replace("(", "");
         return '<p> ' + rep4 + ' </p>';
     },
+    stringAdd: function (value) {
+        let str = value.toString();
+        const rep1 = str.replace("-", "");
+        const rep2 = rep1.replace(")", "");
+        const rep3 = rep2.replace(" ", "");
+        const rep4 = rep3.replace("(", "");
+        return '<p> ' + rep4 + ' </p>';
+
+    },
     renderrerFunction: function (value) {
         const str = value.toString();
         return str;
@@ -51,6 +60,7 @@ Ext.define('ClearApp.app.controller.GridController', {
             record = Ext.create('ClearApp.app.model.ComboModel');
         record.set('name', 'newName');
         record.set('description', 'newDescription');
+        record.set('another', 'newAnother');
         store.add(record);
         store.save();
     }

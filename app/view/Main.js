@@ -11,7 +11,8 @@ Ext.define('ClearApp.app.view.Main', {
         'ClearApp.app.view.GridStudentsView',
         'ClearApp.app.store.GridStudentsStore',
         'ClearApp.app.model.GridStudentsModel',
-        'ClearApp.app.viewmodel.GridViewModel'
+        'ClearApp.app.viewmodel.GridViewModel',
+        'ClearApp.app.view.NewGridView',
 
     ],
 
@@ -89,10 +90,10 @@ Ext.define('ClearApp.app.view.Main', {
             iconCls: 'x-fa fa-user',
             layout: 'fit',
             items: [{
-                xtype: 'gridStudentsView',
+                xtype: 'NewGridView',
                 scrollable: true,
                 bind: {
-                    store: '{StudentsPagingStore}'
+                    store: '{newStore}'
                 },
             }]
         }, {
@@ -104,7 +105,6 @@ Ext.define('ClearApp.app.view.Main', {
                 height: 100,
                 plain: true,
                 floating: false,  // usually you want this set to True (default)
-                renderTo: Ext.getBody(),  // usually rendered by it's containing component
                 items: [{
                     text: 'plain item 1'
                 }, {
