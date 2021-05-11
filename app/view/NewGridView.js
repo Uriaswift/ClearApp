@@ -42,7 +42,8 @@ Ext.define('ClearApp.app.view.NewGridView', {
         {
             text: "Телефон",
             flex: 1,
-            dataIndex: 'phone'
+            dataIndex: 'phone',
+            renderer: 'stringAdd',
         },
         {
             text: "Адрес",

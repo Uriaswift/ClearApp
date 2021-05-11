@@ -53,7 +53,7 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
             model: 'ClearApp.app.model.ComboModel',
             proxy: {
                 type: 'ajax',
-                pageSize: 5,
+                //pageSize: 5,
                 url: 'http://localhost:8081/node/api/newStore',
                 reader: {
                     type: 'json',
