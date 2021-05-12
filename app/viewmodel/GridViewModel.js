@@ -61,6 +61,18 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
                     rootProperty: 'items'
                 }
             }
+        },
+        windowStore: {
+            autoLoad: true,
+            model: 'ClearApp.app.model.NewModel',
+            proxy: {
+                type: 'ajax',
+                url: 'http://localhost:8081/node/api/windowStore',
+                reader: {
+                    type: 'json',
+                    rootProperty: 'items'
+                }
+            }
         }
     },
     formulas: {

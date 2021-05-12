@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e1fdd49b-1414-4fd6-ac9b-c246c2fdd900" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/GridController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/GridController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic.json" beforeDir="false" afterPath="$PROJECT_DIR$/classic.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/classic.jsonp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.json" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +71,7 @@
       <workItem from="1620711000241" duration="1390000" />
       <workItem from="1620715151983" duration="3591000" />
       <workItem from="1620730323319" duration="7263000" />
-      <workItem from="1620797656713" duration="6701000" />
+      <workItem from="1620797656713" duration="10196000" />
     </task>
     <servers />
   </component>

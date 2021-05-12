@@ -83,13 +83,15 @@ Ext.define('ClearApp.app.controller.GridController', {
                 defaults: {anchor: '100%'},
                 layout: 'anchor',
                 bind: {
-                    store: '{newStore}',
+                    store: '{windowStore}',
                 },
                 items:[{
                     xtype: 'textfield',
                     fieldLabel: 'ИД',
                     readOnly: true,
-                    bind: '{fieldId}'
+                    bind: {
+                        value: 'windowStore.items.id'
+                    }
                 }, {
                     xtype: 'textfield',
                     fieldLabel: 'Имя',
