@@ -1,7 +1,10 @@
 Ext.define('ClearApp.app.controller.GridController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.grid-controller',
-
+    requires: [
+        'ClearApp.app.model.GridModel',
+        'ClearApp.app.viewmodel.GridViewModel'
+    ],
     onItemSelected: function (sender, record) {
         Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
     },
@@ -61,5 +64,60 @@ Ext.define('ClearApp.app.controller.GridController', {
         record.set('another', 'newAnother');
         store.add(record);
         store.save();
+    },
+    gridRowClick: function ( _this, record, element, rowIndex, e, eOpts ){
+
+        var window = Ext.create('Ext.Window', {
+            frame: true,
+            width: 350,
+            height: 330,
+            modal: true,
+            title: 'Information',
+            layout: 'fit',
+            items:[{
+                xtype: 'fieldset',
+                columnWidth: 0.5,
+                title: 'Info',
+                //collapsible: true,
+                defaultType: 'textfield',
+                defaults: {anchor: '100%'},
+                layout: 'anchor',
+                bind: {
+                    store: '{newStore}',
+                },
+                items:[{
+                    xtype: 'textfield',
+                    fieldLabel: 'ИД',
+                    readOnly: true,
+                    bind: '{fieldId}'
+                }, {
+                    xtype: 'textfield',
+                    fieldLabel: 'Имя',
+                    readOnly: true
+                }, {
+                    xtype: 'textfield',
+                    fieldLabel: 'Фамилия',
+                    readOnly: true
+                }, {
+                    xtype: 'textfield',
+                    fieldLabel: 'Телефон',
+                    readOnly: true
+                }, {
+                    xtype: 'textfield',
+                    fieldLabel: 'Адрес',
+                    readOnly: true
+                }]
+            }]
+        });
+
+
+        window.show();
+
+        //создает новую вкладку
+        /*if (!this.window)
+            this.window = this.getView().add({
+                xtype:'textfield'
+            });
+        this.window.show();*/
     }
 });

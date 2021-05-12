@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1fdd49b-1414-4fd6-ac9b-c246c2fdd900" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/view/ModalView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/WindowView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controller/GridController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/GridController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/NewGridView.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/NewGridView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classic.json" beforeDir="false" afterPath="$PROJECT_DIR$/classic.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classic.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/classic.jsonp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.json" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.json" afterDir="false" />
@@ -28,6 +33,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1rjxdIshx74LULLC0fbz9JsndX6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NodeServer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -67,7 +75,9 @@
       <workItem from="1620276681788" duration="10372000" />
       <workItem from="1620369269039" duration="8705000" />
       <workItem from="1620711000241" duration="1390000" />
-      <workItem from="1620715151983" duration="1931000" />
+      <workItem from="1620715151983" duration="3591000" />
+      <workItem from="1620730323319" duration="7263000" />
+      <workItem from="1620797656713" duration="5672000" />
     </task>
     <servers />
   </component>

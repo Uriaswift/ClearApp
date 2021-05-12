@@ -8,27 +8,26 @@ Ext.define('ClearApp.app.view.NewGridView', {
         'ClearApp.app.controller.GridController'
     ],
     selType: 'rowmodel',
-    selModel:
-        {
-            mode: 'SINGLE'
-        },
-    viewConfig:
-        {
-            stripeRows: true
-        },
+    selModel: {
+        mode: 'SINGLE'
+    },
+    viewConfig: {
+        stripeRows: true
+    },
     listeners: {
-        selectionchange: 'onSelectionChange'
+        rowclick: 'gridRowClick'
     },
     bind: {
         store: '{newStore}'
     },
 
-    columns: [{
-        text: "ИД",
-        dataIndex: 'id',
-        width: 35,
-        flex: 1,
-    },
+    columns: [
+        {
+            text: "ИД",
+            dataIndex: 'id',
+            width: 35,
+            flex: 1
+        },
         {
             text: "Имя",
             flex: 1,
@@ -43,7 +42,7 @@ Ext.define('ClearApp.app.view.NewGridView', {
             text: "Телефон",
             flex: 1,
             dataIndex: 'phone',
-            renderer: 'stringAdd',
+            renderer: 'stringAdd'
         },
         {
             text: "Адрес",
@@ -54,11 +53,12 @@ Ext.define('ClearApp.app.view.NewGridView', {
             text: "Аватар",
             flex: 1,
             dataIndex: 'avatar',
-            renderer: 'rendererImage',
-        }],
+            renderer: 'rendererImage'
+        }
+    ],
     bbar: [{
         xtype: 'pagingtoolbar',
-        bind:{
+        bind: {
             store: '{newStore}'
         },
         displayInfo: true,

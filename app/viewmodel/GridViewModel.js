@@ -47,7 +47,8 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
                     rootProperty: 'items'
                 }
             }
-        }, newStore: {
+        },
+        newStore: {
             autoLoad: true,
             pageSize: 5,
             model: 'ClearApp.app.model.ComboModel',
@@ -66,69 +67,14 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
         fieldName: {
             bind: {
                 fieldId: '{fieldId}',
-                comboStore: '{comboStore}'
+                newStore: '{newStore}'
             },
             get: function (data) {
-                if (data.fieldId && data.comboStore) {
-                    var rec = data.comboStore.getById(data.fieldId);
+                if (data.fieldId && data.newStore) {
+                    var rec = data.newStore.getById(data.id);
                     if (!Ext.isEmpty(rec)) {
-                        return rec.get('name')
+                        return rec.get('id')
                     }
-                }
-            },
-            set: function (name) {
-                if (this.get('fieldId') && this.getStore('comboStore')) {
-                    var rec = this.getStore('comboStore').getById(this.get('fieldId'));
-                    if (!Ext.isEmpty(rec)) {
-                        rec.set('name', name)
-                    }
-                    //console.log(rec.get('name'))
-                }
-            }
-        },
-        fieldDescription: {
-            bind: {
-                fieldId: '{fieldId}',
-                comboStore: '{comboStore}'
-            },
-            get: function (data) {
-                if (data.fieldId && data.comboStore) {
-                    var rec = data.comboStore.getById(data.fieldId);
-                    if (!Ext.isEmpty(rec)) {
-                        return rec.get('description')
-                    }
-                }
-            },
-            set: function (description) {
-                if (this.get('fieldId') && this.getStore('comboStore')) {
-                    var rec = this.getStore('comboStore').getById(this.get('fieldId'));
-                    if (!Ext.isEmpty(rec)) {
-                        rec.set('description', description)
-                    }
-                    //console.log(rec.get('description'))
-                }
-            }
-        },
-        fieldAnother: {
-            bind: {
-                fieldId: '{fieldId}',
-                comboStore: '{comboStore}'
-            },
-            get: function (data) {
-                if (data.fieldId && data.comboStore) {
-                    var rec = data.comboStore.getById(data.fieldId);
-                    if (!Ext.isEmpty(rec)) {
-                        return rec.get('another')
-                    }
-                }
-            },
-            set: function (another) {
-                if (this.get('fieldId') && this.getStore('comboStore')) {
-                    var rec = this.getStore('comboStore').getById(this.get('fieldId'));
-                    if (!Ext.isEmpty(rec)) {
-                        rec.set('another', another)
-                    }
-                    //console.log(rec.get('description'))
                 }
             }
         }

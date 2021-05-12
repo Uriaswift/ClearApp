@@ -12,8 +12,7 @@ Ext.define('ClearApp.app.view.Main', {
         'ClearApp.app.store.GridStudentsStore',
         'ClearApp.app.model.GridStudentsModel',
         'ClearApp.app.viewmodel.GridViewModel',
-        'ClearApp.app.view.NewGridView',
-
+        'ClearApp.app.view.NewGridView'
     ],
 
     controller: 'grid-controller',
@@ -146,7 +145,8 @@ Ext.define('ClearApp.app.view.Main', {
                 layout: 'hbox',
                 items: [{
                     xtype: 'textfield',
-                    flex: 1
+                    flex: 1,
+                    readOnly: true,
                 }, {
                     xtype: 'splitter'
                 }, {
