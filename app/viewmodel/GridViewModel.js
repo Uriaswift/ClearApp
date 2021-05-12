@@ -70,7 +70,7 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
                 newStore: '{newStore}'
             },
             get: function (data) {
-                if (data.fieldId && data.newStore) {
+                if (data.id && data.newStore) {
                     var rec = data.newStore.getById(data.id);
                     if (!Ext.isEmpty(rec)) {
                         return rec.get('id')
