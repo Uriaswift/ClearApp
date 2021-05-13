@@ -20,7 +20,6 @@ Ext.define('ClearApp.app.view.NewGridView', {
     bind: {
         store: '{newStore}'
     },
-
     columns: [
         {
             text: "ИД",

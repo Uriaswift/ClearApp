@@ -4,7 +4,15 @@
     <list default="true" id="e1fdd49b-1414-4fd6-ac9b-c246c2fdd900" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controller/GridController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/GridController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/FormView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/GridStudentsView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/NewGridView.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/NewGridView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/TextAreaForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/WindowView.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classic.json" beforeDir="false" afterPath="$PROJECT_DIR$/classic.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classic.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/classic.jsonp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.json" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.json" afterDir="false" />
@@ -40,6 +48,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -71,7 +80,8 @@
       <workItem from="1620711000241" duration="1390000" />
       <workItem from="1620715151983" duration="3591000" />
       <workItem from="1620730323319" duration="7263000" />
-      <workItem from="1620797656713" duration="10196000" />
+      <workItem from="1620797656713" duration="15983000" />
+      <workItem from="1620880238871" duration="2418000" />
     </task>
     <servers />
   </component>

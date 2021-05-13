@@ -8,7 +8,6 @@ Ext.define('ClearApp.app.view.Main', {
         'ClearApp.app.model.GridModel',
         'ClearApp.app.store.GridStore',
         'ClearApp.app.view.GridView',
-        'ClearApp.app.view.GridStudentsView',
         'ClearApp.app.store.GridStudentsStore',
         'ClearApp.app.model.GridStudentsModel',
         'ClearApp.app.viewmodel.GridViewModel',
@@ -35,7 +34,6 @@ Ext.define('ClearApp.app.view.Main', {
             flex: 0
         },
     },
-
     tabBar: {
         flex: 1,
         layout: {
@@ -43,7 +41,6 @@ Ext.define('ClearApp.app.view.Main', {
             overflowHandler: 'none'
         }
     },
-
     responsiveConfig: {
         tall: {
             headerPosition: 'top'
@@ -52,7 +49,6 @@ Ext.define('ClearApp.app.view.Main', {
             headerPosition: 'left'
         }
     },
-
     defaults: {
         bodyPadding: 20,
         tabConfig: {
@@ -70,8 +66,6 @@ Ext.define('ClearApp.app.view.Main', {
             }
         }
     },
-
-
     items: [
         {
             title: 'First Grid',
@@ -174,19 +168,16 @@ Ext.define('ClearApp.app.view.Main', {
                     displayField: 'name',
                     valueField: 'id',
                     bind: {
-                        store: '{comboStore}',
-                        value: '{fieldId}'
+                        store: '{newStore}',
+                        //value: '{fieldId}'
                     }
                 }, {
                     fieldLabel: 'Field Id',
-                    bind: '{fieldId}',
                     readOnly: true
                 }, {
                     fieldLabel: 'Field Name',
-                    bind: '{fieldName}'
                 }, {
                     fieldLabel: 'Field Description',
-                    bind: '{fieldDescription}'
                 }],
             }, {
                 buttons: [{
@@ -201,7 +192,6 @@ Ext.define('ClearApp.app.view.Main', {
                         handler: "onSave2"
                     }
                 ],
-
             }]
         }]
 });

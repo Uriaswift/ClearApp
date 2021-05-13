@@ -21,33 +21,6 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
                 }
             },
         },
-        StudentsPagingStore: {
-            autoLoad: true,
-            model: 'ClearApp.app.model.GridStudentsModel',
-            pageSize: 2,
-            proxy: {
-                type: 'rest',
-                reader: {
-                    pageSize: 2,
-                    rootProperty: 'data',
-                    type: 'json',
-                    totalProperty: 'TotalCount'
-                },
-                url: 'http://localhost/node/api/info'
-            }
-        },
-        comboStore: {
-            autoLoad: true,
-            model: 'ClearApp.app.model.ComboModel',
-            proxy: {
-                type: 'ajax',
-                url: 'http://localhost:8081/node/api/comboStore',
-                reader: {
-                    type: 'json',
-                    rootProperty: 'items'
-                }
-            }
-        },
         newStore: {
             autoLoad: true,
             pageSize: 5,
@@ -55,19 +28,7 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
             proxy: {
                 type: 'ajax',
                 //pageSize: 5,
-                url: 'http://localhost:8081/node/api/newStore',
-                reader: {
-                    type: 'json',
-                    rootProperty: 'items'
-                }
-            }
-        },
-        windowStore: {
-            autoLoad: true,
-            model: 'ClearApp.app.model.NewModel',
-            proxy: {
-                type: 'ajax',
-                url: 'http://localhost:8081/node/api/windowStore',
+                url: 'http://localhost/node/api/newStore',
                 reader: {
                     type: 'json',
                     rootProperty: 'items'
@@ -76,19 +37,19 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
         }
     },
     formulas: {
-        fieldName: {
+        /*fieldName: {
             bind: {
                 fieldId: '{fieldId}',
-                newStore: '{newStore}'
+                windowStore: '{windowStore}'
             },
             get: function (data) {
-                if (data.id && data.newStore) {
-                    var rec = data.newStore.getById(data.id);
+                if (data.id && data.windowStore) {
+                    var rec = data.windowStore.getById(data.id);
                     if (!Ext.isEmpty(rec)) {
                         return rec.get('id')
                     }
                 }
             }
-        }
+        }*/
     }
 });

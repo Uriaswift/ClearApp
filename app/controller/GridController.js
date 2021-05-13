@@ -66,60 +66,55 @@ Ext.define('ClearApp.app.controller.GridController', {
         store.save();
     },
     gridRowClick: function ( _this, record, element, rowIndex, e, eOpts ){
-
         var window = Ext.create('Ext.Window', {
             frame: true,
             width: 350,
-            height: 330,
+            //height: 360,
             modal: true,
             title: 'Information',
-            layout: 'fit',
+            //layout: 'fit',
             items:[{
                 xtype: 'fieldset',
                 columnWidth: 0.5,
                 title: 'Info',
-                //collapsible: true,
                 defaultType: 'textfield',
-                defaults: {anchor: '100%'},
-                layout: 'anchor',
-                bind: {
-                    store: '{windowStore}',
-                },
+                //defaults: {anchor: '100%'},
+                //layout: 'anchor',
                 items:[{
                     xtype: 'textfield',
                     fieldLabel: 'ИД',
                     readOnly: true,
-                    bind: {
-                        value: 'windowStore.items.id'
-                    }
+                    value: record.get('id')
                 }, {
                     xtype: 'textfield',
                     fieldLabel: 'Имя',
-                    readOnly: true
+                    readOnly: true,
+                    value: record.get('name')
                 }, {
                     xtype: 'textfield',
                     fieldLabel: 'Фамилия',
-                    readOnly: true
+                    readOnly: true,
+                    value: record.get('surname')
                 }, {
                     xtype: 'textfield',
                     fieldLabel: 'Телефон',
-                    readOnly: true
+                    readOnly: true,
+                    value: record.get('phone')
                 }, {
                     xtype: 'textfield',
                     fieldLabel: 'Адрес',
-                    readOnly: true
+                    readOnly: true,
+                    value: record.get('address')
                 }]
+            },{
+                xtype:'button',
+                handler: function (btn){
+                    btn.up().hide();
+                },
+                text: "Закрыть"
             }]
         });
-
-
         window.show();
-
-        //создает новую вкладку
-        /*if (!this.window)
-            this.window = this.getView().add({
-                xtype:'textfield'
-            });
-        this.window.show();*/
-    }
+    },
 });
+
