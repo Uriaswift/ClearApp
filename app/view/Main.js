@@ -11,7 +11,8 @@ Ext.define('ClearApp.app.view.Main', {
         'ClearApp.app.store.GridStudentsStore',
         'ClearApp.app.model.GridStudentsModel',
         'ClearApp.app.viewmodel.GridViewModel',
-        'ClearApp.app.view.NewGridView'
+        'ClearApp.app.view.NewGridView',
+        'ClearApp.app.model.TreeModel'
     ],
 
     controller: 'grid-controller',
@@ -169,7 +170,6 @@ Ext.define('ClearApp.app.view.Main', {
                     valueField: 'id',
                     bind: {
                         store: '{newStore}',
-                        //value: '{fieldId}'
                     }
                 }, {
                     fieldLabel: 'Field Id',
@@ -192,6 +192,17 @@ Ext.define('ClearApp.app.view.Main', {
                         handler: "onSave2"
                     }
                 ],
+            }]
+        },{
+            title: 'TreeGrid',
+            iconCls: 'x-fa fa-user',
+            layout: 'fit',
+            items: [{
+                xtype: 'treepanel',
+                scrollable: true,
+                bind: {
+                    store: '{treeStore}'
+                }
             }]
         }]
 });

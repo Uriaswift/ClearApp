@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1fdd49b-1414-4fd6-ac9b-c246c2fdd900" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/model/TreeModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/TreeView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controller/GridController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/GridController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/FormView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/GridStudentsView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/model/GridStudentsModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/GridStudentsModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/GridView.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/GridView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/NewGridView.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/NewGridView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/TextAreaForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/WindowView.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/build/temp/development/ClearApp/sass/ClearApp-all.scss.tmp" afterDir="false" />
@@ -43,12 +42,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -81,11 +81,19 @@
       <workItem from="1620715151983" duration="3591000" />
       <workItem from="1620730323319" duration="7263000" />
       <workItem from="1620797656713" duration="15983000" />
-      <workItem from="1620880238871" duration="2418000" />
+      <workItem from="1620880238871" duration="12946000" />
+      <workItem from="1620969716995" duration="2377000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

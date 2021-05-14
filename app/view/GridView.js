@@ -40,16 +40,18 @@ Ext.define('ClearApp.app.view.GridView', {
             flex: 1
         }
     ],
-    plugins: [{
-        ptype: 'gridfilters'
-    }],
+    plugins: [
+        {
+            ptype: 'gridfilters'
+        }
+    ],
     filter: {type: 'string', dataIndex: 'Name'},
     listeners: {
         select: 'onItemSelected'
     },
     bbar: [{
         xtype: 'pagingtoolbar',
-        bind:{
+        bind: {
             store: '{gridStore}'
         },
         displayInfo: true,

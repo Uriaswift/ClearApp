@@ -27,8 +27,33 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
             model: 'ClearApp.app.model.ComboModel',
             proxy: {
                 type: 'ajax',
-                //pageSize: 5,
                 url: 'http://localhost/node/api/newStore',
+                reader: {
+                    type: 'json',
+                    rootProperty: 'items'
+                }
+            }
+        },
+        treeStore: {
+            type: 'tree',
+            autoLoad: true,
+            folderSort: true,
+            model: 'ClearApp.app.model.TreeModel',
+            //fields: ['name', 'surname', 'phone'],
+            root: {
+                expanded: true,
+                text: 'Names',
+                children: [
+                    {
+                        text: 'Name',
+                        expanded: true,
+                        leaf: true
+                    }
+                ]
+            },
+            proxy: {
+                type: 'ajax',
+                url: 'http://localhost/node/api/treeStore',
                 reader: {
                     type: 'json',
                     rootProperty: 'items'

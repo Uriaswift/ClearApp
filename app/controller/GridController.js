@@ -3,7 +3,8 @@ Ext.define('ClearApp.app.controller.GridController', {
     alias: 'controller.grid-controller',
     requires: [
         'ClearApp.app.model.GridModel',
-        'ClearApp.app.viewmodel.GridViewModel'
+        'ClearApp.app.viewmodel.GridViewModel',
+        'ClearApp.app.model.TreeModel'
     ],
     onItemSelected: function (sender, record) {
         Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
@@ -65,22 +66,18 @@ Ext.define('ClearApp.app.controller.GridController', {
         store.add(record);
         store.save();
     },
-    gridRowClick: function ( _this, record, element, rowIndex, e, eOpts ){
+    gridRowClick: function (_this, record, element, rowIndex, e, eOpts) {
         var window = Ext.create('Ext.Window', {
             frame: true,
             width: 350,
-            //height: 360,
             modal: true,
             title: 'Information',
-            //layout: 'fit',
-            items:[{
+            items: [{
                 xtype: 'fieldset',
                 columnWidth: 0.5,
                 title: 'Info',
                 defaultType: 'textfield',
-                //defaults: {anchor: '100%'},
-                //layout: 'anchor',
-                items:[{
+                items: [{
                     xtype: 'textfield',
                     fieldLabel: 'ИД',
                     readOnly: true,
@@ -106,9 +103,9 @@ Ext.define('ClearApp.app.controller.GridController', {
                     readOnly: true,
                     value: record.get('address')
                 }]
-            },{
-                xtype:'button',
-                handler: function (btn){
+            }, {
+                xtype: 'button',
+                handler: function (btn) {
                     btn.up().hide();
                 },
                 text: "Закрыть"
