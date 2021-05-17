@@ -1,19 +1,25 @@
 Ext.define('ClearApp.app.view.TreeView', {
-    extend: 'Ext.grid.Panel',
-    xtype: 'widget.grid-view',
+    extend: 'Ext.tree.Panel',
+    xtype: 'widget.tree-grid-view',
     autoScroll: true,
     title: 'Users',
+    rootVisible: false,
     columns: [
         {
             xtype: 'treecolumn',
             text: 'Name',
             dataIndex: 'name',
-            flex: 1,
+            minWidth: 200,
+            flex: 1
         }, {
             text: 'Surname',
-            dataIndex: 'surname'
+            dataIndex: 'surname',
+            minWidth: 200,
+            flex: 1
         }, {
             text: 'Phone',
-            dataIndex: 'phone'
+            dataIndex: 'phone',
+            minWidth: 200,
+            flex: 1
         }]
 });

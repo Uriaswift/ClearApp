@@ -1,5 +1,5 @@
 Ext.define('ClearApp.app.model.TreeModel', {
-    extend: 'Ext.data.Model',
+    extend: 'Ext.data.TreeModel',
     idProperty:'id',
     fields: ['name', 'surname', 'phone']
 });
