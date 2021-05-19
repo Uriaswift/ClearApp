@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e1fdd49b-1414-4fd6-ac9b-c246c2fdd900" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/model/TreeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/TreeModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/TreeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/TreeView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/viewmodel/GridViewModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic.json" beforeDir="false" afterPath="$PROJECT_DIR$/classic.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/classic.jsonp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.json" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/sass/example/bootstrap.jsonp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +80,7 @@
       <workItem from="1620969716995" duration="5002000" />
       <workItem from="1621234253858" duration="9000" />
       <workItem from="1621234272121" duration="616000" />
+      <workItem from="1621235295959" duration="704000" />
     </task>
     <servers />
   </component>

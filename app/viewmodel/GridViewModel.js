@@ -36,18 +36,16 @@ Ext.define('ClearApp.app.viewmodel.GridViewModel', {
         },
         treeStore: {
             type: 'tree',
-            autoLoad: true,
             folderSort: true,
             model: 'ClearApp.app.model.TreeModel',
-            fields: ['name', 'surname', 'phone'],
-            root: {
-            },
+            sorters: 'name',
+            root: 'root',
             proxy: {
                 type: 'ajax',
                 url: 'http://localhost/node/api/treeStore',
                 reader: {
                     type: 'json',
-                    rootProperty: 'items'
+                    rootProperty: 'result'
                 }
             }
         }

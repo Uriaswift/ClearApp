@@ -198,7 +198,7 @@ Ext.define('ClearApp.app.view.Main', {
             iconCls: 'x-fa fa-user',
             layout: 'fit',
             items: [{
-                xtype: 'treepanel',
+                xtype: 'tree-grid-view',
                 scrollable: true,
                 bind: {
                     store: '{treeStore}'
